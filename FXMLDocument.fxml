@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rxtx.project.one.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="264.0" layoutY="343.0" onAction="#ActivateHandler" text="ACTIVATE" />
+        <Label fx:id="label" layoutX="194.0" layoutY="153.0" minHeight="16" minWidth="69" />
+      <Label fx:id="uav_speed" layoutX="51.0" layoutY="63.0" prefHeight="26.0" prefWidth="94.0" text="00" textFill="#0984ff" />
+      <Label layoutX="51.0" layoutY="45.0" prefHeight="18.0" prefWidth="94.0" text="UAV SPEED" />
+      <Label layoutX="51.0" layoutY="89.0" prefHeight="18.0" prefWidth="94.0" text="UAV ROLL" />
+      <Label layoutX="51.0" layoutY="130.0" prefHeight="18.0" prefWidth="94.0" text="UAV PITCH" />
+      <Label fx:id="uav_roll" layoutX="51.0" layoutY="107.0" prefHeight="26.0" prefWidth="94.0" text="00" textFill="#0984ff" />
+      <Label fx:id="uav_pitch" layoutX="52.0" layoutY="148.0" prefHeight="26.0" prefWidth="94.0" text="00" textFill="#0984ff" />
+      <Label layoutX="50.0" layoutY="171.0" prefHeight="18.0" prefWidth="178.0" text="COMMAND GIVEN" />
+      <Label fx:id="CC" layoutX="51.0" layoutY="189.0" prefHeight="26.0" prefWidth="394.0" text="NA" textFill="#0984ff" />
+      <TextField fx:id="PortField" layoutX="50.0" layoutY="343.0" />
+      <Button layoutX="403.0" layoutY="343.0" onAction="#handleKeyPressed" text="ENTER PORT AGAIN" />
+    </children>
+</AnchorPane>
